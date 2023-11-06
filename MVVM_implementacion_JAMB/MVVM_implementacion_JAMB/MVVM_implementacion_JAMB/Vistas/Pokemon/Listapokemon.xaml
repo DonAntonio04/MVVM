@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_implementacion_JAMB.Vistas.Pokemon.Listapokemon"
+             NavigationPage.HasNavigationBar="False">
+    
+    
+    <Grid RowDefinitions="60 , *"
+          BackgroundColor="#FSF6F6">
+        <Label Text="POKEDEX"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="#fd8298">
+            
+        </Label>
+        <CollectionView BackgroundColor="#EAEDEC"
+                        Grid.Row="1">
+            
+        </CollectionView>
+    </Grid>
+
+    
+</ContentPage>

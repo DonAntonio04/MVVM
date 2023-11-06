@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_implementacion_JAMB.Vistas.Pokemon.Registrarpokemon"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions="80, *"
+          BackgroundColor="#1d1d1d">
+        <StackLayout Orientation="Horizontal" Padding="15">
+            <Image Source="haciaatras.png" WidthRequest="40"/>
+            <Image Source="pokemon.png" />
+
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>
