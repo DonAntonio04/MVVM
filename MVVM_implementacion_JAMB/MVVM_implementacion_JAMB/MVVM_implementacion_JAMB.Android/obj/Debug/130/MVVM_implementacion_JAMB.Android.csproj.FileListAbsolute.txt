@@ -638,4 +638,5 @@ C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\flecha.png
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\haciaatras.png
-C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\pokemon.png
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\pokebola.png
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\ojo.png
