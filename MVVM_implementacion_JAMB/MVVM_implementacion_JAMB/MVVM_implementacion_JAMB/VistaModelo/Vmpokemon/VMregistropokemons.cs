@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MVVM_implementacion_JAMB.Datos;
+using MVVM_implementacion_JAMB.Modelo;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,9 +59,24 @@ namespace MVVM_implementacion_JAMB.VistaModelo.Vmpokemon
         }
         #endregion
         #region PROCESOS
-        public async Task ProcesoAsyncrono()
-            {
 
+        public async Task Insertar()
+        {
+            var funcion = new Dpokemon();
+            var parametros = new Mpokemon();
+            parametros.Colorfondo = _Txtcolorfondo;
+            parametros.Colorpoder = _Txtcolorpoder;
+            parametros.Icono = _Txticono;
+            parametros.Nombre = _Txtnombre;
+            parametros.NroOrden = _Txtnro;
+            parametros.Poder = _Txtpoder;
+
+            await funcion.Insertarpokemon(parametros);
+        }
+
+            public async Task Volver()
+            {
+              await Navigation.PopAsync();
             }
             public void ProcesoSimple()
             {
@@ -67,7 +84,8 @@ namespace MVVM_implementacion_JAMB.VistaModelo.Vmpokemon
             }
             #endregion
             #region COMANDOS
-            public ICommand ProcesoAsyncommand => new Command(async () => await ProcesoAsyncrono());
+            public ICommand Insertarcommand => new Command(async()=> await Insertar());
+            public ICommand Volvercommand => new Command(async () => await Volver());
             public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
             #endregion
         

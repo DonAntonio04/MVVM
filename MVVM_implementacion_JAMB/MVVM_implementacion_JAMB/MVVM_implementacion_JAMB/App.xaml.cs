@@ -12,7 +12,7 @@ namespace MVVM_implementacion_JAMB
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Registrarpokemon());
+            MainPage = new NavigationPage(new Listapokemon());
         }
 
         protected override void OnStart()

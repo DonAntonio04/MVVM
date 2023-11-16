@@ -61,3 +61,7 @@ C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\obj\iPhone\Debug\MVVM_implementacion_JAMB.iOS.csproj.CopyComplete
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\obj\iPhone\Debug\MVVM_implementacion_JAMB.iOS.exe
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\obj\iPhone\Debug\MVVM_implementacion_JAMB.iOS.pdb
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\bin\iPhone\Debug\Firebase.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\bin\iPhone\Debug\LiteDB.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.iOS\bin\iPhone\Debug\System.Reactive.dll

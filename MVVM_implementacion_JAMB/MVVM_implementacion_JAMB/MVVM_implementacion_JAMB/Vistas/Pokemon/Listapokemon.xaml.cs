@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM_implementacion_JAMB.VistaModelo.Vmpokemon;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,15 @@ namespace MVVM_implementacion_JAMB.Vistas.Pokemon
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Listapokemon : ContentPage
     {
+   
         public Listapokemon()
         {
             InitializeComponent();
+           BindingContext = new VMListapokemon(Navigation);
+ 
+          
         }
+
+    
     }
 }

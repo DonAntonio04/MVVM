@@ -640,3 +640,8 @@ C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\haciaatras.png
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\pokebola.png
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\res\drawable\ojo.png
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\android\assets\Firebase.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\android\assets\LiteDB.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\android\assets\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\android\assets\System.Reactive.dll
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB.Android\obj\Debug\130\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll

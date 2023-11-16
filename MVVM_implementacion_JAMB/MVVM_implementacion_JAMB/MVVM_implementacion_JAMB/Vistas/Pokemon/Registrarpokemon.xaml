@@ -7,8 +7,12 @@
     <Grid RowDefinitions="80, *"
           BackgroundColor="#1d1d1d">
         <StackLayout Orientation="Horizontal" Padding="15">
-            <Image Source="haciaatras.png" WidthRequest="40"/>
-            <Image Source="https://i.ibb.co/fdsJrjQ/pokemon.png" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="haciaatras.png" WidthRequest="40">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Volvercommand}"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="https://i.ibb.co/3hTL9ch/pokemon-1.png" HorizontalOptions="CenterAndExpand"/>
             <Image Source="pokebola.png" />
         </StackLayout>
         <StackLayout Grid.Row="1" Margin="10">
@@ -67,7 +71,8 @@
                         CornerRadius="15"
                         FontAttributes="25"
                         WidthRequest="60"
-                        HeightRequest="60">
+                        HeightRequest="60"
+                        Command="{Binding Insertarcommand}">
                     
                 </Button>
             </Frame>

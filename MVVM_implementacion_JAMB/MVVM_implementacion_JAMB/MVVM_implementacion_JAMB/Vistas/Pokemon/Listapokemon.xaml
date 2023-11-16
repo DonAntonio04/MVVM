@@ -16,9 +16,48 @@
             
         </Label>
         <CollectionView BackgroundColor="#EAEDEC"
-                        Grid.Row="1">
-            
+                        Grid.Row="1"
+                        ItemsSource="{Binding Listapokemon}"
+                        Margin="0,10,0,0">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="2"
+                                 HorizontalItemSpacing="10"
+                                 VerticalItemSpacing="10">
+                    
+                </GridItemsLayout>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="100, *" Margin="0,0,0,0">
+                        <Frame Grid.Row="1" WidthRequest="250" HorizontalOptions="Center" CornerRadius="15" Margin="0,-70,0,0" BackgroundColor="{Binding  Colorfondo } " HasShadow="False">
+                            <StackLayout Margin="0,30,0,0">
+                                <Label Text="{Binding NroOrden}"></Label>
+                                <Label Text="{Binding Nombre}" CharacterSpacing="1" FontSize="20" Margin="0,0,0,5"></Label>
+                                <Button Text="{Binding  Poder}" CornerRadius="30" HorizontalOptions="Start" TextTransform="None" HeightRequest="40" BackgroundColor="{Binding  Colorpoder }"></Button>
+                            </StackLayout>
+                        </Frame>
+                        <Image Source="{Binding Icono}" Grid.RowSpan="2" HeightRequest="100"  VerticalOptions="StartAndExpand"/>
+
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
         </CollectionView>
+        <Button Text="+"
+                Grid.Row="1"
+                HeightRequest="100"
+                WidthRequest="100"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                CornerRadius="50"
+                Margin="15"
+                FontSize="50"
+                FontAttributes="Bold"
+                BackgroundColor="#FFD755"
+                Command="{Binding Iraregistrocommand}">
+            
+        </Button>
     </Grid>
 
     
