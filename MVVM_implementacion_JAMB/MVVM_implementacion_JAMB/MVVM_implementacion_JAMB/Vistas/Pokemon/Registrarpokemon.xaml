@@ -18,19 +18,19 @@
         <StackLayout Grid.Row="1" Margin="10">
             <StackLayout Orientation="Horizontal">
                 <Label Text="Nombre: " TextColor="White" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"></Label>
-                <Entry Placeholder="Ingrese el nombre" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" HorizontalOptions="StartAndExpand" Text="{Binding Txtnombre}" ></Entry>
+                <Entry Placeholder="Ingrese el nombre" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" HorizontalOptions="StartAndExpand" Text="{Binding Txtnombre}"  ></Entry>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Color de fondo: " TextColor="White" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"></Label>
-                <Entry Placeholder="Ingrese el color de fondo" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" HorizontalOptions="StartAndExpand" Text="{Binding Txtcolorfondo}"></Entry>
+                <Entry Placeholder="Ingrese el color de fondo" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" HorizontalOptions="StartAndExpand" Text="{Binding Txtcolorfondo}" ></Entry>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Número:"  TextColor="White" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"></Label>
-                <Entry Placeholder="Ingrese el número" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" HorizontalOptions="StartAndExpand" Text="{Binding Txtnro}"></Entry>
+                <Entry Placeholder="Ingrese el número" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" HorizontalOptions="StartAndExpand" Text="{Binding Txtnro}" Keyboard="Numeric"></Entry>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Icono: " TextColor="White" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"></Label>
-                <Entry Placeholder="Ingrese el icono" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White"  HorizontalOptions="StartAndExpand" Text="{Binding Txticono}"></Entry>
+                <Entry Placeholder="Ingrese el icono" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White"  HorizontalOptions="StartAndExpand" Text="{Binding Txticono}" Keyboard="Url"></Entry>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Poder: " TextColor="White" FontAttributes="Bold" VerticalOptions="Center" FontSize="18"></Label>

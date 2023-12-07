@@ -21,7 +21,7 @@ namespace MVVM_implementacion_JAMB.VistaModelo.Vmpokemon
              string _Txticono;
         #endregion
         #region CONSTRUCTOR
-        public VMregistropokemons(INavigation navigation)
+            public VMregistropokemons(INavigation navigation)
             {
              Navigation = navigation;
             }
@@ -85,6 +85,7 @@ namespace MVVM_implementacion_JAMB.VistaModelo.Vmpokemon
             #endregion
             #region COMANDOS
             public ICommand Insertarcommand => new Command(async()=> await Insertar());
+        
             public ICommand Volvercommand => new Command(async () => await Volver());
             public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
             #endregion

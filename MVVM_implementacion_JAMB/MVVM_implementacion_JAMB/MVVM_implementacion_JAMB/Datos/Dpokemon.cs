@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace MVVM_implementacion_JAMB.Datos
 {
-     public class Dpokemon
+    public class Dpokemon
     {
         public async Task Insertarpokemon(Mpokemon parametros)
         {
@@ -20,16 +20,47 @@ namespace MVVM_implementacion_JAMB.Datos
                 .Child("Pokemon")
                 .PostAsync(new Mpokemon()
                 {
+                    IdPokemon = Guid.NewGuid(),
                     Colorfondo = parametros.Colorfondo,
                     Colorpoder = parametros.Colorpoder,
                     Icono = parametros.Icono,
                     Nombre = parametros.Nombre,
                     NroOrden = parametros.NroOrden,
                     Poder = parametros.Poder,
-                
+
                 }
                 );
         }
+        public async Task Editarpokemon(Mpokemon nuevosDatos)
+        {
+            var actualizar = (await Cconexion
+                .firebase.Child("Pokemon")
+                .OnceAsync<Mpokemon>())
+                .Where(a => a.Object.IdPokemon == nuevosDatos.IdPokemon).FirstOrDefault();
+
+            await Cconexion.firebase
+                .Child("Pokemon")
+                .Child(actualizar.Key)
+                .PutAsync(new Mpokemon()
+                {
+                    IdPokemon = nuevosDatos.IdPokemon,
+                    Colorfondo = nuevosDatos.Colorfondo,
+                    Colorpoder = nuevosDatos.Colorpoder,
+                    NroOrden = nuevosDatos.NroOrden,
+                    Icono = nuevosDatos.Icono,
+                    Nombre = nuevosDatos.Nombre,
+                    Poder = nuevosDatos.Poder
+                });
+        }
+        public async Task Borrarpokemon(Guid idPokemon)
+        {
+            var pokemonABorrar = (await Cconexion.firebase
+                .Child("Pokemon")
+                .OnceAsync<Mpokemon>()).Where(a => a.Object.IdPokemon == idPokemon).FirstOrDefault();
+
+            await Cconexion.firebase.Child("Pokemon").Child(pokemonABorrar.Key).DeleteAsync();
+        }
+
         public async Task<ObservableCollection<Mpokemon>> MostrarPokemon()
         {
             //return (await Cconexion.firebase
@@ -51,5 +82,7 @@ namespace MVVM_implementacion_JAMB.Datos
             .AsObservableCollection());
             return data;
         }
+
     }
 }
+

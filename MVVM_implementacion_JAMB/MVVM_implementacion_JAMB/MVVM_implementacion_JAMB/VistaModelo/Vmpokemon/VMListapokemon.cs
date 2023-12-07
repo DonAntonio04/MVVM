@@ -4,6 +4,7 @@ using MVVM_implementacion_JAMB.Vistas.Pokemon;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -16,7 +17,8 @@ namespace MVVM_implementacion_JAMB.VistaModelo.Vmpokemon
        
              #region VARIABLES
              string _Texto;
-              ObservableCollection<Mpokemon> _Listapokemon;
+          Mpokemon _Seleccionapokemon;
+        ObservableCollection<Mpokemon> _Listapokemon;
              #endregion
              #region CONSTRUCTOR
             public VMListapokemon(INavigation navigation)
@@ -33,27 +35,47 @@ namespace MVVM_implementacion_JAMB.VistaModelo.Vmpokemon
                           OnpropertyChanged();
                 }
             }
-            #endregion
-            #region PROCESOS
+        public Mpokemon Seleccionapokemon
+        {
+            get { return _Seleccionapokemon; }
+            set
+            {
+                if (_Seleccionapokemon != value)
+                {
+                    _Seleccionapokemon = value;
+                }
+            }
+        }
+        #endregion
+        #region PROCESOS
 
-              public async Task Mostrarpokemon()
+        public async Task Mostrarpokemon()
               {
                 var funcion = new Dpokemon();
-               Listapokemon= await funcion.MostrarPokemon();
+                var lista = await funcion.MostrarPokemon();
+               Listapokemon = lista;
               }
 
-            public async Task Iraregistro()
-            {
+        public async Task Iraregistro()
+        {
             await Navigation.PushAsync(new Registrarpokemon());
-            }
-            public void ProcesoSimple()
-            {
+        }
+        public async Task AbrirVistaEditar()
+        {
+            await Navigation.PushAsync(new Eliminar(Seleccionapokemon));
+        }
 
-            }
+        public void ProcesoSimple()
+        {
+
+        }
             #endregion
             #region COMANDOS
             public ICommand Iraregistrocommand => new Command(async () => await Iraregistro());
-            public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
+
+        public ICommand AbrirVistaEditarcommand => new Command(async () => await AbrirVistaEditar());
+
+        public ICommand ProcesoSimpcommand => new Command(ProcesoSimple);
             #endregion
         
     }

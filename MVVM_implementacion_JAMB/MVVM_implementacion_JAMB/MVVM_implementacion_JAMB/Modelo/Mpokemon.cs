@@ -6,6 +6,7 @@ namespace MVVM_implementacion_JAMB.Modelo
 {
     public class Mpokemon
     {
+        public Guid IdPokemon { get; set; }
         public string Colorfondo { get; set; }
         public string Colorpoder { get; set; }
         public string Icono { get; set; }

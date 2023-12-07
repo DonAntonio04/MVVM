@@ -19,3 +19,5 @@ C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\obj\Debug\netstandard2.0\Vistas\Menuprincipal.xaml.g.cs
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\obj\Debug\netstandard2.0\Vistas\Pokemon\Listapokemon.xaml.g.cs
 C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\obj\Debug\netstandard2.0\Vistas\Pokemon\Registrarpokemon.xaml.g.cs
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\obj\Debug\netstandard2.0\Vistas\Pokemon\Editar.xaml.g.cs
+C:\Users\hp\Desktop\MVVM\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\MVVM_implementacion_JAMB\obj\Debug\netstandard2.0\Vistas\Pokemon\Eliminar.xaml.g.cs
